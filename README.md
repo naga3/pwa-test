@@ -52,3 +52,12 @@ https://onesignal.com/
 yarn add '@nuxtjs/onesignal'
 ```
 
+### GitHub Pages deploy
+
+https://ja.nuxtjs.org/faq/github-pages/
+
+```
+yarn add push-dir
+```
+
+
