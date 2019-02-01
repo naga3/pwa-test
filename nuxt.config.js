@@ -33,6 +33,22 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    },
+    modules: [
+      '@nuxtjs/onesignal', // pwaの前に定義
+      '@nuxtjs/pwa'
+    ],
+    oneSignal: {
+      init: {
+        appId: '4a264266-471c-4abf-a48f-8067ca820aa1',
+        allowLocalhostAsSecureOrigin: true,
+        welcomeNotification: {
+          disable: true
+        }
+      }
+    },
+    workbox: {
+      dev: true, //開発環境でもPWAできるように
     }
   }
 }
